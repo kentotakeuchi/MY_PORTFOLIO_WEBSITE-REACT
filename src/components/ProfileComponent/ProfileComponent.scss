@@ -1,0 +1,32 @@
+.ProfileComponent {
+    display: grid;
+    grid-template-rows: 6.5rem 3rem .5fr .5fr;
+    grid-template-columns: 50% 50%;
+    grid-gap: 3.5rem 2rem;
+
+    color: #000;
+}
+
+.Pro {
+    grid-row: 2 / 2;
+}
+
+.Article {
+    grid-row: 3 / 3;
+
+    line-height: 2.5rem;
+}
+
+.Article2 {
+    grid-row: 4 / 5;
+    grid-column: 1 / 3;
+
+    line-height: 2.5rem;
+}
+
+img {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+
+    width: 100%;
+}

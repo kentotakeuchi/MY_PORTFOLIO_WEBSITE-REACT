@@ -1,0 +1,36 @@
+/****************************************
+* Reference
+*https://getbootstrap.com/docs/4.0/getting-started/theming/#sass-options
+ ******************/
+
+
+/////////////////////////////////////////
+/// OVERWRITE BOOTSTRAP
+
+// border-radius -> false.
+$enable-rounded: false;
+
+
+/////////////////////////////////////////
+/// BOOTSTRAP
+@import "~bootstrap/scss/bootstrap.scss";
+
+
+/////////////////////////////////////////
+/// CUSTOM
+
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "../components/Footer/Footer";
+@import "../components/Header/Header";
+@import "../components/MyProjects/MyProjects";
+@import "../components/NavItems/NavItems";
+
+@import "../containers/App";
+
