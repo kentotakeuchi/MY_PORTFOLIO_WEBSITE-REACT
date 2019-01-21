@@ -7,11 +7,14 @@ const myProject = (props) => {
     console.log(props);
     return(
     <li className={classes.MyProject}>
-        <Link className={classes.Link}
+        <a href="http://www.kentotakeuchi.com/saturdays-art-surf"></a>
+        {/* <Link className={classes.Link}
         to={props.link}>
             {props.children}
-        </Link>
+        </Link> */}
     </li>)
 };
 
 export default myProject;
+
+// anchor > href > 

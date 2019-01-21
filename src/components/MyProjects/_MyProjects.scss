@@ -1,5 +1,15 @@
-.MyProjects {
+.MyProjects li {
+    margin-bottom: 1.2rem;
+}
+
+.MyProjects a {
     color: #000;
+
+    &:hover {
+        text-decoration: none;
+        color: #ff0000;
+        cursor: pointer;
+    }
 }
 
 .MyProjects span {
@@ -9,3 +19,4 @@
 
     padding-right: 1.5rem;
 }
+

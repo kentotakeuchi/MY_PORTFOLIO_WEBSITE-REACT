@@ -17,27 +17,27 @@ const ContactComponent = () => {
             <ul>
                 <li>
                     <a href="mailto:ideal.mt.reality@gmail.com">
-                        <img src={Email} width="25" />
+                        <img src={Email} />
                     </a>
                     </li>
                 <li>
                     <a href="https://twitter.com/KentoTakeuchi">
-                        <img src={Twitter} width="25" />
+                        <img src={Twitter} />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.facebook.com/mikio.tanaka.001">
-                        <img src={Facebook} width="25" />
+                        <img src={Facebook} />
                     </a>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/mikiotanaka/?hl=en">
-                        <img src={Instagram} width="25" />
+                        <img src={Instagram} />
                     </a>
                 </li>
                 <li>
                     <a href="https://github.com/kentotakeuchi">
-                        <img src={Github} width="25" />
+                        <img src={Github} />
                     </a>
                 </li>
             </ul>
