@@ -5,7 +5,7 @@ import NavItems from '../../components/NavItems/NavItems';
 import NewsComponent from '../../components/NewsComponent/NewsComponent';
 import Footer from '../../components/Footer/Footer';
 
-import classes from './News.scss';
+import classes from '../../sass/containers/_News.scss';
 
 class News extends Component {
   render() {

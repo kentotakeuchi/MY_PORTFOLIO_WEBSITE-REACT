@@ -1,6 +1,6 @@
 import React from 'react';
 
-import classes from './NewsComponent.scss';
+import classes from '../../sass/components/_NewsComponent.scss';
 
 const NewsComponent = () => (
     <div className={classes.NewsComponent}>

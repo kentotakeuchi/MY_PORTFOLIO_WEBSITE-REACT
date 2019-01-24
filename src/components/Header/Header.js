@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import ShuffleText from 'shuffle-text';
 
-import classes from './Header.scss';
+import classes from '../../sass/components/_Header.scss';
 
 class Header extends Component {
 

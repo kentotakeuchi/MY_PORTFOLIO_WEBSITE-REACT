@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Portrait from '../../assets/img/me-1.jpg';
-import classes from './ProfileComponent.scss';
+import classes from '../../sass/components/_ProfileComponent.scss';
 
 const profileComponent = () => (
     <div className={classes.ProfileComponent}>

@@ -27,10 +27,18 @@ $enable-rounded: false;
 @import "base/typography";
 @import "base/utilities";
 
-@import "../components/Footer/Footer";
-@import "../components/Header/Header";
-@import "../components/MyProjects/MyProjects";
-@import "../components/NavItems/NavItems";
+@import "components/ContactComponent";
+@import "components/Footer";
+@import "components/Header";
+@import "components/MyProject";
+@import "components/MyProjects";
+@import "components/NavItem";
+@import "components/NavItems";
+@import "components/NewsComponent";
+@import "components/ProfileComponent";
 
-@import "../containers/App";
+@import "containers/Contact";
+@import "containers/News";
+@import "containers/Profile";
+@import "containers/Projects";
 

@@ -5,7 +5,7 @@ import NavItems from '../../components/NavItems/NavItems';
 import ContactComponent from '../../components/ContactComponent/ContactComponent';
 import Footer from '../../components/Footer/Footer';
 
-import classes from './Contact.scss';
+import classes from '../../sass/containers/_Contact.scss';
 
 class Contact extends Component {
   render() {

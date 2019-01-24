@@ -5,7 +5,7 @@ import NavItems from '../../components/NavItems/NavItems';
 import MyProjects from '../../components/MyProjects/MyProjects';
 import Footer from '../../components/Footer/Footer';
 
-import classes from './Projects.scss';
+import classes from '../../sass/containers/_Projects.scss';
 
 class Projects extends Component {
 

@@ -1,0 +1,16 @@
+.News {
+    font-size: 1.2rem;
+
+    margin: 7rem 8rem;
+
+    display: grid;
+    grid-template-rows: 7.5rem 48rem 1.5rem;
+    grid-template-columns: 33.3% 66.7%;
+
+    @media only screen and (max-width: 37.5em) {
+        margin: 5rem 5rem 1rem 5rem;
+
+        grid-template-rows: 7.5rem 1fr 2.2fr 3.5rem;
+        grid-template-columns: 100%;
+    };
+}

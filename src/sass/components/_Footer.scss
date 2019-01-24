@@ -1,0 +1,13 @@
+.Footer {
+    font-size: 1rem;
+
+    margin-top: 6rem;
+
+    grid-column: 1 / -1;
+}
+
+.Footer span {
+    @media only screen and (max-width: 37.5em) {
+        display: block;
+    };
+}

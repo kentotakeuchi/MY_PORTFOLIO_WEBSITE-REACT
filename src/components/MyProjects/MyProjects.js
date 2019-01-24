@@ -1,7 +1,7 @@
 import React from 'react';
 
-import MyProject from './MyProject/MyProject';
-import classes from './_MyProjects.scss';
+// import MyProject from './MyProject/MyProject';
+import classes from '../../sass/components/_MyProjects.scss';
 
 const myProjects = () => (
     <ul className={classes.MyProjects}>

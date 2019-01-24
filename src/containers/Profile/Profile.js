@@ -5,7 +5,7 @@ import NavItems from '../../components/NavItems/NavItems';
 import ProfileComponent from '../../components/ProfileComponent/ProfileComponent';
 import Footer from '../../components/Footer/Footer';
 
-import classes from './Profile.scss';
+import classes from '../../sass/containers/_Profile.scss';
 
 class Profile extends Component {
   render() {

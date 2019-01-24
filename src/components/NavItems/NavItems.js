@@ -1,7 +1,7 @@
 import React from 'react';
 
 import NavItem from './NavItem/NavItem';
-import classes from './NavItems.scss';
+import classes from '../../sass/components/_NavItems.scss';
 
 const navItems = () => (
     <ul className={classes.NavItems}>

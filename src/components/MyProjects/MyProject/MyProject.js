@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import classes from './MyProject.scss';
+import classes from '../../../sass/components/_MyProject.scss';
 
 const myProject = (props) => {
     console.log(props);

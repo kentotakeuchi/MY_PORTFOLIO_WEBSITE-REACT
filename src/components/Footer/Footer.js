@@ -1,10 +1,10 @@
 import React from 'react';
-import classes from './Footer.scss';
+import classes from '../../sass/components/_Footer.scss';
 
 const footer = () => (
     <footer className={classes.Footer}>
-        <span>copyright </span>
-        <span>&copy; kento takeuchi. all right reserved.</span>
+        <span>copyright &copy;</span>
+        <span> kento takeuchi. all right reserved.</span>
     </footer>
 );
 
