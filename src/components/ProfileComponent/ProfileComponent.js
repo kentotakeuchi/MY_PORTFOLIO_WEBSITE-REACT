@@ -5,15 +5,24 @@ import classes from '../../sass/components/_ProfileComponent.scss';
 
 const profileComponent = () => (
     <div className={classes.ProfileComponent}>
-        <h1>kento takeuchi</h1>
-        <h4 className={classes.Pro}>web developer</h4>
-        <article className={classes.Article}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur a venenatis augue. Nullam viverra mi ut erat bibendum, et rhoncus nulla efficitur. Donec faucibus blandit ipsum, sed fringilla magna vulputate eu. Donec facilisis placerat tempus. Etiam eget egestas enim, non auctor urna. Aenean dictum pulvinar lobortis. Suspendisse placerat magna lectus. Morbi consectetur odio ac scelerisque hendrerit. Aenean lobortis gravida erat, eu laoreet tortor fermentum quis. Quisque at lobortis velit. Quisque feugiat auctor leo vel volutpat. Aenean velit nulla, euismod vel varius eget, viverra a sapien. Aliquam sed pellentesque erat. Praesent malesuada vestibulum faucibus. Fusce sit amet nisl venenatis, rhoncus diam in, egestas eros. Proin vel enim eu elit fringilla rhoncus.
-        </article>
-        <article className={classes.Article2}>
-        Maecenas ultrices purus purus, in semper nunc pretium quis. Nullam lobortis tortor in sapien pharetra congue. Duis viverra ex nec molestie tempor. Integer bibendum risus vel convallis blandit. Curabitur viverra eu ipsum interdum mollis. Fusce consectetur malesuada massa, in auctor turpis rhoncus eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis at tortor vel leo rutrum auctor. Duis ullamcorper vehicula dolor, bibendum facilisis ligula convallis vel. Aenean molestie sapien erat, nec auctor lorem ultricies et. Cras eget eleifend odio. Nulla vehicula egestas erat ac condimentum. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam et velit et mauris fringilla varius et a neque.
-        </article>
+        <h1>Kento Takeuchi</h1>
         <img src={Portrait} alt="me"/>
+        <h4>Web Developer</h4>
+        <article>
+        Born in Yamaguchi in 1984. Graduated from the Department of Economics of Doshisha University in Kyoto. Spent 8 years at various supermarkets in Tokyo and Enjoyed soccer and surfing. Came in the U.S.A and completed the Certificate Program in Computer Programming of University of California, Santa Cruz, Silicon Valley Extension in 2018.
+        <br></br>
+        <br></br>
+        Kento, an entry level front-end web developer, does his best to be there for others with his current skills. Each month, a new project is created and developed as a result of his aspiration to grow and make new creations as of January 2019. Recently, he has extended his skills to include modern frameworks and libraries such as React/Redux to develop new web applications.
+        <br></br>
+        <br></br>
+        Besides, Kento is also an enthusiastic amature soccer player. Playing soccer seriously helps him not only to work on his technical skills, but also teaches him the importance of respecting others together with disciplining himself and finding joy in his life. He belonged to a soccer team consisting of mainly Japanese players in San Francisco Premier League, and currently belongs to a local soccer team in Santa Clara, whose members are multinational players.
+        <br></br>
+        <br></br>
+        His friends, family and people he meets are his source of great support, without which he couldn't grow and challenge himself to do a lot of new things. The passion he feels towards his profession is what makes him strive so he could reach his goals.
+        <br></br>
+        <br></br>
+        Official Site URL: http://www.kentotakeuchi.com/
+        </article>
     </div>
 );
 
