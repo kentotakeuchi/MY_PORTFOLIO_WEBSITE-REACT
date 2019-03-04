@@ -9,16 +9,16 @@ const profileComponent = () => (
         <img src={Portrait} alt="me"/>
         <h4>Web Developer</h4>
         <article>
-        Born in Yamaguchi in 1984. Graduated from the Department of Economics of Doshisha University in Kyoto. Spent 8 years at various supermarkets in Tokyo and Enjoyed soccer and surfing. Came in the U.S.A and completed the Certificate Program in Computer Programming of University of California, Santa Cruz, Silicon Valley Extension in 2018.
+        Born in Yamaguchi in 1984. Graduated from Doshisha University in Kyoto with a degree in economics. Spent 8 years working as a sales person at various supermarkets in Tokyo and pursued his passion for soccer and surfing. Came to the U.S.A and completed the Certificate Program in Computer Programming of University of California, Santa Cruz, Silicon Valley Extension in 2018.
         <br></br>
         <br></br>
-        Kento, an entry level front-end web developer, does his best to be there for others with his current skills. Each month, a new project is created and developed as a result of his aspiration to grow and make new creations as of January 2019. Recently, he has extended his skills to include modern frameworks and libraries such as React/Redux to develop new web applications.
+        Kento, an entry level front-end web developer, works hard to support others with his current skills. As of January 2019, a new project is created and developed every month as a result of his aspiration to grow as a professional web developer. Recently, he has increased his skills to include modern frameworks and libraries such as React/Redux to develop new web applications.
         <br></br>
         <br></br>
-        Besides, Kento is also an enthusiastic amature soccer player. Playing soccer seriously helps him not only to work on his technical skills, but also teaches him the importance of respecting others together with disciplining himself and finding joy in his life. He belonged to a soccer team consisting of mainly Japanese players in San Francisco Premier League, and currently belongs to a local soccer team in Santa Clara, whose members are multinational players.
+        Outside of his professional career, Kento is an enthusiastic soccer player. Playing soccer seriously helps him not only to work on his technical skills, but also reminds him of the importance of respecting others while teaching himself discipline and finding joy in his life. He used to belong to a soccer team consisting of mainly Japanese players in the San Francisco Premier League, and currently belongs to a multinational local soccer team in Santa Clara.
         <br></br>
         <br></br>
-        His friends, family and people he meets are his source of great support, without which he couldn't grow and challenge himself to do a lot of new things. The passion he feels towards his profession is what makes him strive so he could reach his goals.
+        His friends, family and people he meets are his greatest source of support, without which he couldn't grow and challenge himself to the fullest extent. His passion for his career drives him to excel in his professional endeavors.
         <br></br>
         <br></br>
         Official Site URL: http://www.kentotakeuchi.com/

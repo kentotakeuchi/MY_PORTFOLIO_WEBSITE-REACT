@@ -13,7 +13,7 @@ class Header extends Component {
         // Trigger effect
         shuffleText.start();
 
-        ['click', 'mouseover'].forEach(event => {
+        ['click', 'contextmenu'].forEach(event => {
           element.addEventListener(event, () => {
           // Create instance
           const shuffleText = new ShuffleText(element);
