@@ -1,7 +1,19 @@
 @import '../../sass/abstracts/variables';
+@import '../../sass/abstracts/mixins';
 
+.NavItems {
+
+    // @include respond(phone) {
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
+}
+
+// dark
 .NavItemsDark {
-    // dark
-    color: $color-matrix;
-    background-color: $color-matrix-black;
+
+    // @include respond(phone) {
+    //     display: grid;
+    //     grid-template-columns: repeat(2, 1fr);
+    // }
 }

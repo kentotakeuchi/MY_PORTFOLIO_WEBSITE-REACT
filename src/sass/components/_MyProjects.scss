@@ -1,24 +1,29 @@
 @import '../abstracts/variables';
+@import '../abstracts/mixins';
 
-.MyProjects li {
-    margin-bottom: 1.2rem;
 
-    & a {
-        color: $color-black;
+.MyProjects {
 
-        &:hover {
-            text-decoration: none;
-            color: $color-danger;
-            cursor: pointer;
+    & li {
+        margin-bottom: 1.2rem;
+
+        & a {
+            color: $color-black;
+
+            &:hover {
+                text-decoration: none;
+                color: $color-danger;
+                cursor: pointer;
+            }
         }
-    }
 
-    & span {
-        vertical-align: 2px;
-        font-size: 1rem;
-        color: $color-grey-dark;
+        & span {
+            vertical-align: 2px;
+            font-size: 1rem;
+            color: $color-grey-dark;
 
-        padding-right: 1.5rem;
+            padding-right: 1.5rem;
+        }
     }
 }
 

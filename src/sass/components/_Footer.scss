@@ -1,13 +1,18 @@
+@import '../../sass/abstracts/mixins';
+
 .Footer {
     font-size: 1rem;
-
     margin-top: 6rem;
-
     grid-column: 1 / -1;
-}
 
-.Footer span {
-    @media only screen and (max-width: 37.5em) {
-        display: block;
+    @include respond(phone) {
+        align-self: end;
+        margin-bottom: 1rem;
     };
+
+    & span {
+        @include respond(phone) {
+            display: block;
+        };
+    }
 }
