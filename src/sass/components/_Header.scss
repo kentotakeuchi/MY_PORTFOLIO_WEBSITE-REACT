@@ -1,14 +1,104 @@
+@import '../../sass/abstracts/variables';
+
 .Header {
     grid-column: 1 / -1;
+
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    & .Name {
+        color: $color-black;
+        margin-right: 2rem;
+
+        @media only screen and (max-width: 37.5em) {
+            display: block;
+        };
+    }
+
+    // light / dark
+    & .Mode {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: end;
+
+        list-style: none;
+        font-weight: 600;
+
+        display: flex;
+
+        & p {
+            color: inherit;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                color: $color-black;
+                cursor: pointer;
+            }
+        }
+
+        & .Active {
+            color: $color-black;
+
+            &:hover {
+                cursor: text;
+            }
+        }
+
+    }
 }
 
-.Name {
-    color: #000;
-    margin-right: 2rem;
+.HeaderDark {
+    grid-column: 1 / -1;
 
-    @media only screen and (max-width: 37.5em) {
-        display: block;
-    };
+    display: grid;
+    grid-template-columns: max-content 1fr;
+
+    & .Name {
+        color: $color-matrix;
+        margin-right: 2rem;
+
+        @media only screen and (max-width: 37.5em) {
+            display: block;
+        };
+    }
+
+    // light / dark
+    & .Mode {
+        grid-row: 1 / 2;
+        grid-column: 2 / 3;
+        justify-self: end;
+
+        list-style: none;
+        font-weight: 600;
+
+        display: flex;
+
+        & p {
+            color: $color-grey-light-1;
+
+            &:first-child {
+                margin-right: 1rem;
+            }
+
+            &:hover {
+                color: $color-matrix;
+                cursor: pointer;
+            }
+        }
+
+        & .Active {
+            color: inherit;
+
+            &:hover {
+                color: inherit;
+                cursor: text;
+            }
+        }
+
+    }
 }
 
 

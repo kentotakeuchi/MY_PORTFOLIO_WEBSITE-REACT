@@ -1,18 +1,39 @@
+@import '../abstracts/variables';
+
+// light
 .NavItem {
     margin-bottom: 1.2rem;
-}
 
-.NavLink {
-    // color: $color-grey-dark;
-    color: #999;
+    & .NavLink {
+        color:$color-grey-dark;
 
-    &:hover {
-        text-decoration: none;
-        color: #ff0000;
-        cursor: pointer;
+        &:hover {
+            text-decoration: none;
+            color: $color-danger;
+            cursor: pointer;
+        }
+    }
+
+    & .active {
+        color: $color-black;
     }
 }
 
-.active {
-    color: #000;
+// dark
+.NavItemDark {
+    margin-bottom: 1.2rem;
+
+    & .NavLink {
+        color:$color-matrix;
+
+        &:hover {
+            text-decoration: none;
+            color: $color-danger;
+            cursor: pointer;
+        }
+    }
+
+    & .active {
+        color: $color-danger;
+    }
 }

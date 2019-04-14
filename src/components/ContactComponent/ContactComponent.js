@@ -44,39 +44,82 @@ class ContactComponent extends Component {
 
 
     render() {
-        return(
-            <div className={classes.ContactComponent}>
-                <div id="map" className={classes.Map}></div>
-                <p>santa clara, ca, usa</p>
-                <ul>
-                    <li>
-                        <a href="mailto:ideal.mt.reality@gmail.com">
-                            <img src={Email} alt="email" />
-                        </a>
+        // mode
+        const dark = this.props.context.state.darkMode;
+
+        // light
+        if (!dark) {
+            return(
+                <div className={classes.ContactComponent}>
+                    <div id="map" className={classes.Map}></div>
+                    <p>santa clara, ca, usa</p>
+                    <ul>
+                        <li>
+                            <a href="mailto:ideal.mt.reality@gmail.com">
+                                <img src={Email} alt="email" />
+                            </a>
+                            </li>
+                        <li>
+                            <a href="https://twitter.com/KentoTakeuchi">
+                                <img src={Twitter} alt="twitter" />
+                            </a>
                         </li>
-                    <li>
-                        <a href="https://twitter.com/KentoTakeuchi">
-                            <img src={Twitter} alt="twitter" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/mikio.tanaka.001">
-                            <img src={Facebook} alt="facebook" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/mikiotanaka/?hl=en">
-                            <img src={Instagram} alt="instagram" />
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/kentotakeuchi">
-                            <img src={Github} alt="github" />
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        )
+                        <li>
+                            <a href="https://www.facebook.com/mikio.tanaka.001">
+                                <img src={Facebook} alt="facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mikiotanaka/?hl=en">
+                                <img src={Instagram} alt="instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kentotakeuchi">
+                                <img src={Github} alt="github" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            );
+        }
+
+        // dark
+        else if (dark) {
+            return(
+                <div className={classes.ContactComponentDark}>
+                    <div id="map" className={classes.Map}></div>
+                    <p>santa clara, ca, usa</p>
+                    <ul>
+                        <li>
+                            <a href="mailto:ideal.mt.reality@gmail.com">
+                                <img src={Email} alt="email" />
+                            </a>
+                            </li>
+                        <li>
+                            <a href="https://twitter.com/KentoTakeuchi">
+                                <img src={Twitter} alt="twitter" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/mikio.tanaka.001">
+                                <img src={Facebook} alt="facebook" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/mikiotanaka/?hl=en">
+                                <img src={Instagram} alt="instagram" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/kentotakeuchi">
+                                <img src={Github} alt="github" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            );
+        }
     }
 };
 

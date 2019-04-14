@@ -6,17 +6,42 @@ import NewsComponent from '../../components/NewsComponent/NewsComponent';
 import Footer from '../../components/Footer/Footer';
 
 import classes from '../../sass/containers/_News.scss';
+import { MyContext } from '../../context';
+
 
 class News extends Component {
+
+  // mode
+  static contextType = MyContext;
+
   render() {
-    return (
-      <div className={classes.News}>
-        <Header />
-        <NavItems />
-        <NewsComponent />
-        <Footer />
-      </div>
-    );
+    // mode
+    const context = this.context;
+    const darkMode = this.context.state.darkMode;
+
+    // light
+    if (!darkMode) {
+      return (
+        <div className={classes.News}>
+          <Header context={context}/>
+          <NavItems context={context}/>
+          <NewsComponent context={context}/>
+          <Footer />
+        </div>
+      );
+    }
+
+    // dark
+    if (darkMode) {
+      return (
+        <div className={classes.NewsDark}>
+          <Header context={context}/>
+          <NavItems context={context}/>
+          <NewsComponent context={context}/>
+          <Footer />
+        </div>
+      );
+    }
   }
 }
 

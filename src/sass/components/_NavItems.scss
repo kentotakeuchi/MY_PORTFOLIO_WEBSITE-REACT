@@ -1,3 +1,7 @@
-.NavItems {
-    
+@import '../../sass/abstracts/variables';
+
+.NavItemsDark {
+    // dark
+    color: $color-matrix;
+    background-color: $color-matrix-black;
 }

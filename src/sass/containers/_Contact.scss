@@ -1,16 +1,42 @@
+@import '../../sass/abstracts/variables';
+
 .Contact {
     font-size: 1.2rem;
 
-    margin: 7rem 8rem;
+    height: calc(100vh - 10rem);
+    padding: 7rem 8rem;
 
     display: grid;
-    grid-template-rows: 7.5rem 48rem 1.5rem;
+    grid-template-rows: 7.5rem 1fr min-content;
     grid-template-columns: 33.3% 66.7%;
 
     @media only screen and (max-width: 37.5em) {
         margin: 5rem 5rem 3rem 5rem;
 
         grid-template-rows: 7.5rem .1fr 1fr 3.5rem;
+        grid-template-columns: 100%;
+    };
+}
+
+// dark
+.ContactDark {
+    font-size: 1.2rem;
+
+    height: calc(100vh - 10rem);
+    padding: 7rem 8rem;
+
+    display: grid;
+    grid-template-rows: 7.5rem 1fr min-content;
+    grid-template-columns: 33.3% 66.7%;
+
+    // dark
+    color: $color-matrix;
+    background-color: $color-matrix-black;
+
+    @media only screen and (max-width: 37.5em) {
+        margin: 5rem 5rem 1rem 5rem;
+
+        grid-template-rows: 7.5rem 1fr 2.2fr 3.5rem;
         grid-template-columns: 100%;
     };
 }

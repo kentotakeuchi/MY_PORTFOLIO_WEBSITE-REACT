@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
+
+import { MyContext } from '../context';
 
 import News from './News/News';
 import Contact from './Contact/Contact';
@@ -11,15 +13,19 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Switch>
-          <Route path="/news" component={News} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/profile" component={Profile} />
-          <Route path="/" component={Projects} />
-        </Switch>
+        <MyContext.Consumer>
+          {(context) => (
+            <Switch  context={context}>
+              <Route path="/news" component={News} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/profile" component={Profile} />
+              <Route path="/" component={Projects} />
+            </Switch>
+          )}
+        </MyContext.Consumer>
       </div>
     );
   }
 }
 
-export default App;
+export default withRouter( App );

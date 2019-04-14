@@ -1,5 +1,13 @@
+@import '../../sass/abstracts/variables';
+
 .ContactComponent {
     display: grid;
+
+    .Map {
+        width: 100%;
+        height: 30rem;
+        border-radius: 3px;
+    }
 
     & ul {
         display: flex;
@@ -25,7 +33,41 @@
     }
 }
 
-.Map {
-    width: 100%;
-    height: 30rem;
+// dark
+.ContactComponentDark {
+    display: grid;
+
+    .Map {
+        width: 100%;
+        height: 30rem;
+        border-radius: 3px;
+    }
+
+    & ul {
+        display: flex;
+
+        @media only screen and (max-width: 37.5em) {
+            flex-direction: column;
+        };
+
+        & li {
+
+            & img {
+                width: 5rem;
+                height: 5rem;
+                margin-right: 3rem;
+                transition: all .3s;
+                background-color: $color-matrix;
+                border-radius: 3px;
+
+                @media only screen and (max-width: 37.5em) {
+                    margin-bottom: 1rem;
+                };
+
+                &:hover {
+                    transform: scale(1.3);
+                }
+            }
+        }
+    }
 }
