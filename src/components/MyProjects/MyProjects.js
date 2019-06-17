@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+import Bank from '../../assets/img/projects_bank.png';
 import Saturdays from '../../assets/img/saturdays-bg.png';
 import Todo from '../../assets/img/todo.png';
 import Clear from '../../assets/img/clear-bg.png';
@@ -11,9 +12,21 @@ class MyProjects extends Component {
 
     componentDidMount() {
         const body = document.querySelector('body');
+        const bank = document.querySelector('.bank');
         const saturdays = document.querySelector('.saturdays');
         const todo = document.querySelector('.todo');
         const clear = document.querySelector('.clear');
+
+        bank.addEventListener('mouseover', () => {
+            body.style.backgroundImage = `url(${Bank})`;
+            body.style.width = '100vw';
+            body.style.height = '100vh';
+        });
+        bank.addEventListener('mouseout', () => {
+            body.style.backgroundImage = ``;
+            body.style.width = '';
+            body.style.height = '';
+        });
 
         saturdays.addEventListener('mouseover', () => {
             body.style.backgroundImage = `url(${Saturdays})`;
@@ -58,6 +71,11 @@ class MyProjects extends Component {
         if (!dark) {
             return(
                 <ul className={classes.MyProjects}>
+                    <li className="bank">
+                        <a href="https://bank-of-something.herokuapp.com/">
+                        <span>2019</span>bank
+                        </a>
+                    </li>
                     <li className="saturdays">
                         <a href="http://www.kentotakeuchi.com/saturdays-art-surf">
                         <span>2018</span>saturdays art surf
@@ -81,6 +99,11 @@ class MyProjects extends Component {
         else if (dark) {
             return(
                 <ul className={classes.MyProjectsDark}>
+                    <li className="bank">
+                        <a href="https://bank-of-something.herokuapp.com/">
+                        <span>2019</span>bank
+                        </a>
+                    </li>
                     <li className="saturdays">
                         <a href="http://www.kentotakeuchi.com/saturdays-art-surf">
                         <span>2018</span>saturdays art surf

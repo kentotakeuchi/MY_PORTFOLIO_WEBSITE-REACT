@@ -1,5 +1,6 @@
 import React from 'react';
 
+import bank from '../../assets/img/news_bank.png';
 import Saturdays from '../../assets/img/saturdays.png';
 import Todo from '../../assets/img/todo.png';
 import Clear from '../../assets/img/clear.png';
@@ -14,6 +15,15 @@ const NewsComponent = (props) => {
     if (!dark) {
         return (
             <div className={classes.NewsComponent}>
+
+                <h1>bank</h1>
+                <p>post on 2019.06.17 15:10:33</p>
+                <img src={bank} alt="bank" />
+                <article>
+                BANK is an application like flash card to consolidate vocabulary in English. Users can store phrases users wanted to say and review them at random whenever users have time.
+                </article>
+                <a href="https://bank-of-something.herokuapp.com/">&diams; go to bank</a>
+
                 <h1>saturdays art surf</h1>
                 <p>post on 2019.01.28 11:30:00</p>
                 <img src={Saturdays} alt="saturdays" />
@@ -37,6 +47,7 @@ const NewsComponent = (props) => {
                 CLEAR aims to help users to make clear what their important thing is. This app helps users to organize their items by putting them all in one place. Users can categorize them no matter how they want. Visualizing what users have facilitates grasping what they cherish and who they are. In addition, users are able to browse their friend's items with CLEAR. It would help users to know more their friends through their items. Since each of user have a different story for each item, users can share background of their items. Moreover, users can give away, sell or buy items from their friends.
                 </article>
                 <a href="http://www.kentotakeuchi.com/clear">&hearts; go to clear</a>
+
             </div>
         );
     }
@@ -45,6 +56,15 @@ const NewsComponent = (props) => {
     else if (dark) {
         return (
             <div className={classes.NewsComponentDark}>
+
+                <h1>bank</h1>
+                <p>post on 2019.06.17 15:10:33</p>
+                <img src={bank} alt="bank" />
+                <article>
+                BANK is an application like flash card to consolidate vocabulary in English. Users can store phrases users wanted to say and review them at random whenever users have time.
+                </article>
+                <a href="https://bank-of-something.herokuapp.com/">&diams; go to bank</a>
+
                 <h1>saturdays art surf</h1>
                 <p>post on 2019.01.28 11:30:00</p>
                 <img src={Saturdays} alt="saturdays" />
@@ -68,6 +88,7 @@ const NewsComponent = (props) => {
                 CLEAR aims to help users to make clear what their important thing is. This app helps users to organize their items by putting them all in one place. Users can categorize them no matter how they want. Visualizing what users have facilitates grasping what they cherish and who they are. In addition, users are able to browse their friend's items with CLEAR. It would help users to know more their friends through their items. Since each of user have a different story for each item, users can share background of their items. Moreover, users can give away, sell or buy items from their friends.
                 </article>
                 <a href="http://www.kentotakeuchi.com/clear">&hearts; go to clear</a>
+
             </div>
         );
     }
