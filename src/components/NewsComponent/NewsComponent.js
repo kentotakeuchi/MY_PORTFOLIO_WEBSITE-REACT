@@ -61,7 +61,7 @@ const NewsComponent = (props) => {
                 <p>post on 2019.06.17 15:10:33</p>
                 <img src={bank} alt="bank" />
                 <article>
-                BANK is an application like flash card to consolidate vocabulary in English. Users can store phrases users wanted to say and review them at random whenever users have time.
+                BANK is an application like flash card to consolidate your knowleadge you would like to memorize. you are able to store anything you would like to learn and review them at random anytime, anywhere.
                 </article>
                 <a href="https://bank-of-something.herokuapp.com/">&diams; go to bank</a>
 
